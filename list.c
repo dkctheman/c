@@ -2,7 +2,7 @@
 
 typedef struct list{
     int a;
-    list* next;
+    struct list* next;
 }l;
 
 void main(int argc, char* argv[]){
