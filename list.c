@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <stdio.h>
 #include <stdlib.h>
 struct list{
@@ -50,17 +49,4 @@ void main(int argc, char* argv[]){
 
 
 }
-=======
-#include <stdio.h>
 
-typedef struct list{
-    int a;
-    struct list* next;
-}l;
-
-void main(int argc, char* argv[]){
-
-    printf("You enter %d word",argc);
-
-}
->>>>>>> 039e2bf729c7bedc89b8098ee33780d7f1b889ff
