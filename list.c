@@ -31,9 +31,21 @@ void main(int argc, char* argv[]){
     struct list* head = (struct list*) malloc(sizeof(struct list));
     struct list* currlist = head;
     struct list* temp = NULL;
-    
+    int count;
     int num;
-    for(int i=0; i<20; i++){
+    
+    if(argc > 1){
+
+        count = atoi(argv[1]);
+    }
+
+    else{
+        count =10;
+    }
+   
+
+
+    for(int i=0; i<count; i++){
         num = rand()%100+1;
         temp = createList(num);
         currlist = addList(currlist, temp);
